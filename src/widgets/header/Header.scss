@@ -1,0 +1,26 @@
+
+header {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 auto;
+    margin: 0 auto;
+    
+    li {
+      padding-left: 20px;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
