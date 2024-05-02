@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 
-import SubTitle from "../shared/SubTitle";
-import { Header, Footer } from "../widgets/index";
 import "./App.scss";
-import { ReactComponent as BodySvg } from "../assets/images/body.svg";
+import SubTitle from "../shared/SubTitle";
+import { Header, Footer, Introduce } from "../widgets/index";
+
 function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
@@ -17,23 +17,7 @@ function App() {
         projectsRef={projectsRef}
       />
       <section className="about" ref={aboutRef}>
-        <article className="introduceWrapper">
-          <div className="character">
-            <BodySvg width={200} height={200} />
-          </div>
-          <div className="box">
-            <div className="introduceText">
-              <h1>안녕하세요.</h1>
-              <h1>저는 새로운 기술과 UI/UX에 관심이 많은</h1>
-              <h1>2년차 웹개발자 김아름입니다.</h1>
-            </div>
-            <div className="introduceButton">
-              <button>깃허브</button>
-              <button>노션</button>
-              <button>메일</button>
-            </div>
-          </div>
-        </article>
+        <Introduce />
         <article className="career"></article>
       </section>
       <section className="skills" ref={skillsRef}>

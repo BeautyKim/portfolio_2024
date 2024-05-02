@@ -1,0 +1,23 @@
+.introduceWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 2rem 0 2rem;
+
+  .box {
+    margin-left: 2rem;
+    .introduceText{
+      margin-bottom: 1rem;
+      h1{
+        margin: 0;
+      }
+    }
+
+    .introduceButton{
+      button{
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
