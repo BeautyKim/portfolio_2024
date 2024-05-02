@@ -66,9 +66,19 @@ function Introduce() {
           <h1>2년차 웹개발자 김아름입니다.</h1>
         </div>
         <div className="introduceButton">
-          <button>Github</button>
-          <button>노션</button>
-          <button>메일</button>
+          <button>
+            <a href={"https://github.com/BeautyKim"}>깃허브</a>
+          </button>
+          <button>
+            <a
+              href={
+                "https://www.notion.so/ahreumi/HOME-18e78ba9144742b1a361cb5f7cbfbef3?pvs=4"
+              }
+            >
+              노션
+            </a>
+          </button>
+          <button> 메일</button>
         </div>
       </div>
     </article>
