@@ -3,8 +3,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 10rem 2rem 0 2rem;
+  margin: 5rem 2rem 0 2rem;
 
+  .character {
+    position: relative;
+  }
   .box {
     margin-left: 2rem;
     .introduceText{
@@ -19,5 +22,11 @@
         margin-right: 0.5rem;
       }
     }
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .introduceWrapper{
+    margin: 5rem 0rem 2rem 0rem;
   }
 }

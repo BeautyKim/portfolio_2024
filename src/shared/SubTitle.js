@@ -2,11 +2,14 @@ import React from "react";
 
 function SubTitle(props) {
   const titleStyle = {
-    color: "yellow",
-    backgroundColor: "black",
+    color: "black",
   };
 
-  return <h1 style={titleStyle}>{props.text}</h1>;
+  return (
+    <div>
+      <h4 style={titleStyle}>{props.text}</h4>
+    </div>
+  );
 }
 
 export default SubTitle;

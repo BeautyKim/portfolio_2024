@@ -1,8 +1,15 @@
 import React, { useRef } from "react";
 
 import "./App.scss";
-import SubTitle from "../shared/SubTitle";
-import { Header, Footer, Introduce } from "../widgets/index";
+import {
+  Header,
+  Footer,
+  Introduce,
+  Career,
+  FrontendSkill,
+  BackendSkill,
+  ToolSkill,
+} from "../widgets/index";
 
 function App() {
   const aboutRef = useRef(null);
@@ -18,18 +25,12 @@ function App() {
       />
       <section className="about" ref={aboutRef}>
         <Introduce />
-        <article className="career"></article>
+        <Career />
       </section>
       <section className="skills" ref={skillsRef}>
-        <article className="frontend">
-          <SubTitle text="frontend" />
-        </article>
-        <article className="backend">
-          <SubTitle text="backend" />
-        </article>
-        <article className="tools">
-          <SubTitle text="tools" />
-        </article>
+        <FrontendSkill />
+        <BackendSkill />
+        <ToolSkill />
       </section>
       <section className="projects" ref={projectsRef}></section>
       <Footer />
