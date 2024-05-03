@@ -10,20 +10,29 @@ function Career() {
         <div className="box">
           <h4>프리랜서</h4>
           <ul>
-            <li>111111111111111</li>
-            <li>11111122222222222</li>
-            <li>111111444444444444</li>
+            <li>주요 업무</li>
+            <li>MiPlatform, JSP 등 기존 플랫폼을 Nexacro 플랫폼으로 전환</li>
+            <li>개발 환경</li>
+            <li>
+              Nexacro, JSP, Java, eGovFrame, Spring MVC, Oracle DB,iBATIS,
+              Mybatis
+            </li>
           </ul>
         </div>
       </div>
       <div className="careerWrapper">
         <div className="date">2022.00. ~ 2023.00.</div>
         <div className="box">
-          <h4>ooooo</h4>
+          <h4>씨티아이랩(플랫폼개발팀 연구원)</h4>
           <ul>
-            <li>11111122222222</li>
-            <li>1111113333333</li>
-            <li>111111222222</li>
+            <li className="subtitle">주요 업무</li>
+            <li className="text">
+              프론트엔드, 기능 리스트 및 제품 매뉴얼 작성, 팀 노션 관리
+            </li>
+            <li className="subtitle">
+              <p>개발 환경</p>
+            </li>
+            <li>TypeScript, Angular, MySQL, LoopBack</li>
           </ul>
         </div>
       </div>

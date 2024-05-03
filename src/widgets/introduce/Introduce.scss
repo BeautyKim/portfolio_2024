@@ -14,7 +14,28 @@
 
   .character {
     position: relative;
+    
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      position: fixed;
+      width: 100px;
+      font-size: 0.9rem;
+      background-color: #2b3b307a;
+      color: #f5efe6;
+      text-align: center;
+      border-radius: 6px;
+      margin: 0.5rem;
+      z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
   }
+  
+  
+
   .box {
     margin-left: 2rem;
     .introduceText{

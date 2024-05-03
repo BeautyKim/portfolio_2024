@@ -11,7 +11,7 @@ function SkillBox({ props }) {
         <img
           key={index}
           src={`https://img.shields.io/badge/${skill.title}-${skill.color}?style=flat&logo=${skill.slug}&logoColor=white`}
-          height={20}
+          height={23}
           alt={`${skill.title}_Logo`}
           style={skilsStyle}
         />

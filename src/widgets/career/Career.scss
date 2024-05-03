@@ -10,7 +10,8 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
+      width: 50rem;
        
       .date {
         width: 10rem;
@@ -19,7 +20,7 @@
       }
 
       .box {
-        width: 15rem;
+        width: 64%;
 
         h4 {
           margin: 0;
@@ -28,6 +29,15 @@
         ul {
           margin: 0.5rem 0;
           padding-left: 2rem;
+          list-style-type: none;
+
+          .subtitle {
+            font-weight: bold;
+          }
+
+          .text {
+
+          }
         }
       }
     }

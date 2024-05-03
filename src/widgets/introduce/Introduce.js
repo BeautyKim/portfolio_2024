@@ -10,9 +10,16 @@ import { ReactComponent as RightEye2 } from "../../assets/images/rightEye2.svg";
 
 function Introduce() {
   const [eyes, setEyes] = useState(true);
+  const [xy, setXY] = useState({ x: 0, y: 0 });
+
   const onClick = () => {
     setEyes(false);
   };
+  const handleMouseMove = (e) => {
+    setXY({ x: e.clientX, y: e.clientY });
+  };
+
+  const tooltipXY = { left: `${xy.x}px`, top: `${xy.y}px` };
 
   // 눈알 초기값
   const leftEyeStyle = {
@@ -37,7 +44,7 @@ function Introduce() {
     // 눈 깜빡임
     setTimeout(() => {
       setEyes(true);
-    }, 200);
+    }, 300);
   });
 
   const leftEyeStyleRef = originLeftRef.current;
@@ -46,7 +53,12 @@ function Introduce() {
   return (
     <article className="introduceWrapper">
       <div className="character" onClick={onClick}>
-        <BodySvg width={200} height={200} />
+        <div className="tooltip" onMouseMove={(e) => handleMouseMove(e)}>
+          <BodySvg className="bodySvg" width={200} height={200} />
+          <span className="tooltiptext" style={tooltipXY}>
+            Blink~😉✨
+          </span>
+        </div>
         {eyes ? (
           <>
             <LeftEye style={leftEyeStyleRef} width={7} height={7} />
