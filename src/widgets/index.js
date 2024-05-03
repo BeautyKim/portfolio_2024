@@ -10,3 +10,6 @@ export { default as Career } from "./career/Career";
 export { default as FrontendSkill } from "./frontendSkill/FrontendSkill";
 export { default as BackendSkill } from "./backendSkill/BackendSkill";
 export { default as ToolSkill } from "./toolSkill/ToolSkill";
+
+// projects
+export { default as Projects } from "./projects/Projects";

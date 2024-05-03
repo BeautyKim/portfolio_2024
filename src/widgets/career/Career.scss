@@ -2,23 +2,32 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
-  height: fit-content;
   margin: 4rem 0;
+  padding: 1rem;
+  align-items: center;
 
     .careerWrapper {
       display: flex;
-      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-bottom: 1rem;
        
       .date {
-        width: 6rem;
+        width: 10rem;
         text-align: right;
-        margin-right: 4rem;
+        margin: 0rem 4rem;
       }
 
       .box {
+        width: 15rem;
+
         h4 {
           margin: 0;
+        }
+
+        ul {
+          margin: 0.5rem 0;
+          padding-left: 2rem;
         }
       }
     }

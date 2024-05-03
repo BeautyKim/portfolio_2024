@@ -10,9 +10,9 @@ function Career() {
         <div className="box">
           <h4>프리랜서</h4>
           <ul>
-            <li>111111</li>
-            <li>111111</li>
-            <li>111111</li>
+            <li>111111111111111</li>
+            <li>11111122222222222</li>
+            <li>111111444444444444</li>
           </ul>
         </div>
       </div>
@@ -21,9 +21,9 @@ function Career() {
         <div className="box">
           <h4>ooooo</h4>
           <ul>
-            <li>111111</li>
-            <li>111111</li>
-            <li>111111</li>
+            <li>11111122222222</li>
+            <li>1111113333333</li>
+            <li>111111222222</li>
           </ul>
         </div>
       </div>

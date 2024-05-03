@@ -1,17 +1,21 @@
 import React from "react";
 
-function SkillBox() {
+function SkillBox({ props }) {
+  const skilsStyle = {
+    margin: 3,
+  };
+
   return (
-    <div>
-      <img
-        height={20}
-        width={20}
-        src="https://cdn.simpleicons.org/css3/1572B6/1572B6"
-        alt=""
-      />
-      <div>
-        <p>css3</p>
-      </div>
+    <div className="box">
+      {props.map((skill, index) => (
+        <img
+          key={index}
+          src={`https://img.shields.io/badge/${skill.title}-${skill.color}?style=flat&logo=${skill.slug}&logoColor=white`}
+          height={20}
+          alt={`${skill.title}_Logo`}
+          style={skilsStyle}
+        />
+      ))}
     </div>
   );
 }

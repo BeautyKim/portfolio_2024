@@ -9,6 +9,7 @@ import {
   FrontendSkill,
   BackendSkill,
   ToolSkill,
+  Projects,
 } from "../widgets/index";
 
 function App() {
@@ -32,7 +33,9 @@ function App() {
         <BackendSkill />
         <ToolSkill />
       </section>
-      <section className="projects" ref={projectsRef}></section>
+      <section className="projects" ref={projectsRef}>
+        <Projects />
+      </section>
       <Footer />
     </div>
   );

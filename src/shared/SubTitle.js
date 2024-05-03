@@ -7,7 +7,7 @@ function SubTitle(props) {
 
   return (
     <div>
-      <h4 style={titleStyle}>{props.text}</h4>
+      <h1 style={titleStyle}>{props.text}</h1>
     </div>
   );
 }
