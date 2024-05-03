@@ -4,15 +4,15 @@ import "./Header.scss";
 function Header({ aboutRef, skillsRef, projectsRef }) {
   // 특정 영역 도착 이벤트
   const [activeMenu, setActiveMenu] = useState(null);
+  const [headerBackground, setHeaderBackground] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      const aboutPosition = aboutRef.current.offsetTop;
       const skillsPosition = skillsRef.current.offsetTop;
       const projectsPosition = projectsRef.current.offsetTop;
       const scrollPosition = window.scrollY;
-      console.log("skillsPosition:    " + skillsPosition);
-      console.log("projectsPosition:    " + projectsPosition);
-      console.log("scrollPosition:    " + scrollPosition);
+
       if (scrollPosition < skillsPosition) {
         setActiveMenu("about");
       } else if (
@@ -22,6 +22,12 @@ function Header({ aboutRef, skillsRef, projectsRef }) {
         setActiveMenu("skills");
       } else {
         setActiveMenu("projects");
+      }
+
+      if (scrollPosition >= aboutPosition) {
+        setHeaderBackground("headerBackground");
+      } else {
+        setHeaderBackground("");
       }
     };
 
@@ -38,7 +44,11 @@ function Header({ aboutRef, skillsRef, projectsRef }) {
   };
 
   return (
-    <header>
+    <header
+      className={
+        headerBackground === "headerBackground" ? "headerBackground" : ""
+      }
+    >
       <nav className="navbar">
         <ul>
           <li className={activeMenu === "about" ? "active" : ""}>

@@ -1,15 +1,25 @@
 .career {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
+  height: fit-content;
+  margin: 4rem 0;
 
     .careerWrapper {
-      .date{
-        
+      display: flex;
+      align-items: flex-start;
+       
+      .date {
+        width: 6rem;
+        text-align: right;
+        margin-right: 4rem;
       }
 
       .box {
-
+        h4 {
+          margin: 0;
+        }
       }
     }
 }
