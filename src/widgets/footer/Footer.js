@@ -3,7 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <p>Copyright Beauty Kim</p>
+      <div>
+        <p>Copyright Beauty Kim</p>
+      </div>
     </footer>
   );
 }

@@ -8,12 +8,15 @@ function Career() {
       <div className="careerWrapper">
         <div className="date">2023.00. ~</div>
         <div className="box">
-          <h4>프리랜서</h4>
+          <h4>지피넷(프리랜서)</h4>
           <ul>
-            <li>주요 업무</li>
-            <li>MiPlatform, JSP 등 기존 플랫폼을 Nexacro 플랫폼으로 전환</li>
-            <li>개발 환경</li>
-            <li>
+            <li className="subtitle">주요 업무</li>
+            <li className="text">
+              금융감독원의 MiPlatform, JSP 등 기존 플랫폼을 Nexacro 플랫폼으로
+              전환
+            </li>
+            <li className="subtitle">개발 환경</li>
+            <li className="text">
               Nexacro, JSP, Java, eGovFrame, Spring MVC, Oracle DB,iBATIS,
               Mybatis
             </li>
@@ -29,9 +32,7 @@ function Career() {
             <li className="text">
               프론트엔드, 기능 리스트 및 제품 매뉴얼 작성, 팀 노션 관리
             </li>
-            <li className="subtitle">
-              <p>개발 환경</p>
-            </li>
+            <li className="subtitle">개발 환경</li>
             <li>TypeScript, Angular, MySQL, LoopBack</li>
           </ul>
         </div>

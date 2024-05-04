@@ -44,7 +44,7 @@ function Introduce() {
     // 눈 깜빡임
     setTimeout(() => {
       setEyes(true);
-    }, 300);
+    }, 500);
   });
 
   const leftEyeStyleRef = originLeftRef.current;
@@ -79,18 +79,26 @@ function Introduce() {
         </div>
         <div className="introduceButton">
           <button>
-            <a href={"https://github.com/BeautyKim"}>깃허브</a>
+            <a href={"https://github.com/BeautyKim"} target="_blank">
+              깃허브
+            </a>
           </button>
           <button>
             <a
               href={
                 "https://www.notion.so/ahreumi/HOME-18e78ba9144742b1a361cb5f7cbfbef3?pvs=4"
               }
+              target="_blank"
             >
               노션
             </a>
           </button>
-          <button> 메일</button>
+          <button>
+            {" "}
+            <a href="mailto:shadowbubobubo@gmail.com?subject=안녕하세요.">
+              메일
+            </a>
+          </button>
         </div>
       </div>
     </article>
