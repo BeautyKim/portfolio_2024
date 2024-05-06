@@ -1,4 +1,8 @@
 
+hr {
+  border-color: #73737258;
+}
+
 section {
   padding: 10% 1rem 0 1rem;
   height: 85vh;
@@ -31,14 +35,174 @@ section {
     align-items: center;
     flex-wrap: wrap;
 
-    .box {
-      border: solid;
-      height: 5rem;
-      width: 26rem;
+    .projectWrapper {
+      border: 1px solid #73737258;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      transition: transform .3s;
+      background-color: white;
+      margin-bottom: 5px;
+      align-items: center;
+
+      .imgBox {
+        height: 8rem;
+        width: 17rem;
+        margin: 0.5rem;
+        align-content: center;
+        text-align: center;
+        overflow:hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: scale-down
+        }
+      }
+
+      .textBox {
+        height: 7rem;
+        width: 30rem;
+        margin: 1rem;
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          margin: 1rem 0;
+        }
+      }
     }
+
+    .projectWrapper:hover {
+      transform: scale(1.2);
+    }
+
+    .modalBox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      backdrop-filter: blur(5px);
+      animation: fadeIn 0.5s ease-out forwards;
+
+
+      .modal {
+        border: 1px solid #73737258;
+        border-radius: 8px;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+  
+        .modealHeader {
+          text-align: right;
+          padding: 5px 5px;
+
+          svg {
+            fill: #737372;
+          }
+        }
+  
+        .modalContent {
+          .imgBox {
+            height: 20rem;
+            margin: 0 2rem 1rem 2rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: scale-down;
+              background-color: #f8f8f8;
+            }
+          }
+
+          hr {
+            width: 95%;
+          }
+
+          .textBox {
+            padding: 0 2rem 2rem 2rem;
+            div {
+              .title {
+                font-weight: bold;
+                font-size: 1.3rem;
+              }
+              .date {
+                font-size: 0.9rem;
+              }
+            }
+
+            .description {
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1rem;
+            }
+
+            .subtitle {
+              font-weight: bold;
+              font-size: 1rem;
+            }
+            span {
+              font-size: 1rem;
+            }
+
+            p {
+              margin: 0;
+            }
+
+            .link {
+              margin-top: 16px;
+
+              button{
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+                font-family: "S-CoreDream-3Light";
+                font-weight: bold;
+                transition: 0.25s;
+                border: none;
+                padding: 5px 14px;
+                border-radius: 10px;
+                background-color: #0D0D0D;
+                color: #D9D8D2;
+                
+                a{
+                  text-decoration: none;
+                  color: #D9D8D2;
+                }
+              }
+
+              button:hover {
+                background-color: #D9D8D2;
+                color: #0D0D0D;
+        
+                a{
+                  text-decoration: none;
+                  color: #0D0D0D;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 // Footer
 footer {
@@ -51,8 +215,8 @@ footer {
   
   div {
     width: 60%;
-    border-top: 1px solid #f5efe6;
-    color: #2b3b30;
+    border-top: 1px solid #73737258;
+    color: #737372;
     
   }
 }

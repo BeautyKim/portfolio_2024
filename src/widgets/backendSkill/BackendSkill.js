@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 // shared
 import SubTitle from "../../shared/SubTitle";
 import SkillBox from "../../shared/SkillBox";
+
+// entities
 import { backend_skills } from "../../entities/skills";
 
 function BackendSkill() {

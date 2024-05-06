@@ -79,7 +79,11 @@ function Introduce() {
         </div>
         <div className="introduceButton">
           <button>
-            <a href={"https://github.com/BeautyKim"} target="_blank">
+            <a
+              href={"https://github.com/BeautyKim"}
+              target="_blank"
+              rel="noreferrer"
+            >
               깃허브
             </a>
           </button>
@@ -89,6 +93,7 @@ function Introduce() {
                 "https://www.notion.so/ahreumi/HOME-18e78ba9144742b1a361cb5f7cbfbef3?pvs=4"
               }
               target="_blank"
+              rel="noreferrer"
             >
               노션
             </a>
