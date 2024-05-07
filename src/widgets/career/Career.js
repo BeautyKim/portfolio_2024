@@ -6,7 +6,7 @@ function Career() {
     <article className="career">
       <h1>경력</h1>
       <div className="careerWrapper">
-        <div className="date">2023.00. ~</div>
+        <div className="date">2023.11. ~ </div>
         <div className="box">
           <h4>지피넷(프리랜서)</h4>
           <ul>
@@ -24,7 +24,7 @@ function Career() {
         </div>
       </div>
       <div className="careerWrapper">
-        <div className="date">2022.00. ~ 2023.00.</div>
+        <div className="date">2022.08. ~ 2023.08.</div>
         <div className="box">
           <h4>씨티아이랩(플랫폼개발팀 연구원)</h4>
           <ul>
