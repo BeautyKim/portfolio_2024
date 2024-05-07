@@ -37,7 +37,8 @@ const projects = [
     title: "Notion API 블로그",
     date: "2023.08. ~ 2023.09.",
     cover: "./cover/notion.png",
-    image: "./cover/notion.png",
+    image:
+      "https://github.com/BeautyKim/beauty-kim-app/raw/main/public/notion.gif",
     description:
       "주로 사용하는 기록용 프로그램인 Notion API를 사용해 블로그 개발",
     tack: "Notion API",
@@ -45,7 +46,7 @@ const projects = [
     gitUrl: "https://github.com/BeautyKim/beauty-kim-app",
     notionUrl:
       "https://ahreumi.notion.site/Notion-API-0d58f07c855d42ff88e093d006e12761",
-    url: "",
+    url: "https://beautykimnotionblog-1mm8tyh6u-beautykims-projects.vercel.app/",
   },
   {
     id: 1,
@@ -54,7 +55,7 @@ const projects = [
     cover: "./cover/readvice.png",
     image: "./cover/readvice.gif",
     description:
-      "개인 맞춤 사서인 챗봇, 자동 독서 기록, 이미지 검색 서비스를 제공하는 개인 독서 사이트",
+      "개인 맞춤 사서인 챗봇, 자동 독서 기록, 이미지 검색 서비스를 제공하는 개인 독서 사이트(리뉴얼 준비중)",
     tack: "Front-end: React.js, Redux, Redux-Toolkit, Redux-Saga, Tailwindcss, Axios",
     env: "TypeScript, Next.js, Django, AWS, Ubuntu",
     gitUrl: "https://github.com/BeautyKim/readvice-next-collabo",
