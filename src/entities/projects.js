@@ -12,7 +12,8 @@ const projects = [
     tack: "useState(), useRef(), useEffect() 및 map()을 활용한 UI",
     env: "React18, Node.js v20, Scss",
     gitUrl: "https://github.com/BeautyKim/portfolio_2024",
-    notionUrl: "",
+    notionUrl:
+      "https://ahreumi.notion.site/2024-7c770cbd52f84127801f50d2459add1c",
     url: "https://www.beauty-kim.site",
   },
   {
@@ -27,7 +28,8 @@ const projects = [
     tack: "Carousel, Scroll snap, 가로 마우스휠 스크롤이벤트, keyframes, lottiefiles",
     env: "JavaScript, HTML, CSS",
     gitUrl: "https://github.com/BeautyKim/EEAaO-landing",
-    notionUrl: "",
+    notionUrl:
+      "https://ahreumi.notion.site/Everything-Everywhere-All-At-Once-c7e12e0f85f74454bef5e3b9f45a64a5",
     url: "https://ee-aa-o-landing.vercel.app/",
   },
   {
@@ -51,13 +53,14 @@ const projects = [
     date: "",
     cover: "./cover/readvice.png",
     image:
-      "https://private-user-images.githubusercontent.com/89237300/328420825-d8a35e31-e753-4e23-b044-f9ec98c12a5b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUwNjU5MzAsIm5iZiI6MTcxNTA2NTYzMCwicGF0aCI6Ii84OTIzNzMwMC8zMjg0MjA4MjUtZDhhMzVlMzEtZTc1My00ZTIzLWIwNDQtZjllYzk4YzEyYTViLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA3VDA3MDcxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUwODFmOTgxNDFjOGE4NTE2NTY4NThhNmMwNWNhMWY1Mjk2ZDYwZDg5MDlmOGY2NGZhYjlkYmUzYjIxYmI0NjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.rZpMoiW9JLDs11Ien3EyYWVGM6M_tIENalwa-UU6Dy8",
+      "https://private-user-images.githubusercontent.com/89237300/328420825-d8a35e31-e753-4e23-b044-f9ec98c12a5b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUwNjY1NzMsIm5iZiI6MTcxNTA2NjI3MywicGF0aCI6Ii84OTIzNzMwMC8zMjg0MjA4MjUtZDhhMzVlMzEtZTc1My00ZTIzLWIwNDQtZjllYzk4YzEyYTViLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA3VDA3MTc1M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE5OThjZjliNmM4N2Q5OTAyNjI0Y2M3NjFjNzNlZjRiNGEwYTg0MGVjMGM2OGU5N2JmZjNlMDVjODNhMDYzZmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DNMD9FWZeQFDrADclMtiNm6QN-B3fMr4cO5aPB8jXMA",
     description:
       "개인 맞춤 사서인 챗봇, 자동 독서 기록, 이미지 검색 서비스를 제공하는 개인 독서 사이트",
     tack: "Front-end: React.js, Redux, Redux-Toolkit, Redux-Saga, Tailwindcss, Axios",
     env: "TypeScript, Next.js, Django, AWS, Ubuntu",
     gitUrl: "https://github.com/BeautyKim/readvice-next-collabo",
-    notionUrl: "",
+    notionUrl:
+      "https://ahreumi.notion.site/Readvice-7b4977c0959c4fc8bdeaf845dbd5bfcb?pvs=74",
     url: "",
   },
 ];
