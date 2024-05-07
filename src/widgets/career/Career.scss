@@ -42,3 +42,43 @@
       }
     }
 }
+
+// 모바일
+@media screen and (max-width: 767px){
+  .career {
+    .careerWrapper {
+      width: auto;
+      justify-content: center;
+       
+      .date {
+        width: auto;
+        text-align: center;
+        margin: 0rem 4rem;
+        padding-bottom: 12px;
+      }
+
+      .box {
+        width: 100%;
+
+        h4 {
+          margin: 0;
+        }
+
+        ul {
+          margin: 0.5rem 0;
+          padding-left: 1rem;
+          list-style-type: none;
+
+          .subtitle {
+            font-weight: bold;
+          }
+
+          .text {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+  }
+}

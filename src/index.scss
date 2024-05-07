@@ -13,8 +13,7 @@
 body {
   font-size: 18px;
   margin: 0;
-  min-width: 400px;
-  padding-top: 5vh;
+  padding: 5vh 0 0 0;
   font-family: "S-CoreDream-3Light", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -31,4 +30,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+// 데스크탑
+@media screen and (min-width: 1024px){
+	body {
+    min-width: 1024px
+  }
+}
+
+// 테블릿
+@media screen and (max-width: 1023px){
+	body {
+    max-width: 1023px
+  }
+}
+
+// 모바일
+@media screen and (max-width: 767px){
+	body {
+    max-width: 767px;
+    min-width: 412px
+  }
 }
