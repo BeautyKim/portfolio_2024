@@ -52,8 +52,7 @@ const projects = [
     title: "readvice(팀 북적북적 프로젝트)",
     date: "",
     cover: "./cover/readvice.png",
-    image:
-      "https://private-user-images.githubusercontent.com/89237300/328420825-d8a35e31-e753-4e23-b044-f9ec98c12a5b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUwNjY1NzMsIm5iZiI6MTcxNTA2NjI3MywicGF0aCI6Ii84OTIzNzMwMC8zMjg0MjA4MjUtZDhhMzVlMzEtZTc1My00ZTIzLWIwNDQtZjllYzk4YzEyYTViLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA3VDA3MTc1M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE5OThjZjliNmM4N2Q5OTAyNjI0Y2M3NjFjNzNlZjRiNGEwYTg0MGVjMGM2OGU5N2JmZjNlMDVjODNhMDYzZmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DNMD9FWZeQFDrADclMtiNm6QN-B3fMr4cO5aPB8jXMA",
+    image: "./cover/readvice.gif",
     description:
       "개인 맞춤 사서인 챗봇, 자동 독서 기록, 이미지 검색 서비스를 제공하는 개인 독서 사이트",
     tack: "Front-end: React.js, Redux, Redux-Toolkit, Redux-Saga, Tailwindcss, Axios",
