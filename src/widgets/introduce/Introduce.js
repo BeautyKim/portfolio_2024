@@ -90,7 +90,7 @@ function Introduce() {
           <button>
             <a
               href={
-                "https://www.notion.so/ahreumi/HOME-18e78ba9144742b1a361cb5f7cbfbef3?pvs=4"
+                "https://ahreumi.notion.site/HOME-18e78ba9144742b1a361cb5f7cbfbef3"
               }
               target="_blank"
               rel="noreferrer"
