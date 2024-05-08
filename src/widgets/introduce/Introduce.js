@@ -9,17 +9,21 @@ import { ReactComponent as LeftEye2 } from "../../assets/images/leftEye2.svg";
 import { ReactComponent as RightEye2 } from "../../assets/images/rightEye2.svg";
 
 function Introduce() {
-  const [eyes, setEyes] = useState(true);
-  const [xy, setXY] = useState({ x: 0, y: 0 });
+  const [isBlinking, setIsBlinking] = useState(true);
+  const [eyePosition, setEyePosition] = useState({ x: 0, y: 0 });
 
-  const onClick = () => {
-    setEyes(false);
-  };
   const handleMouseMove = (e) => {
-    setXY({ x: e.clientX, y: e.clientY });
+    setEyePosition({ x: e.clientX, y: e.clientY });
   };
 
-  const tooltipXY = { left: `${xy.x}px`, top: `${xy.y}px` };
+  const handleClick = () => {
+    setIsBlinking(false);
+    setTimeout(() => {
+      setIsBlinking(true);
+    }, 300); // 0.3초 후에 다시 눈 깜빡임 상태로 변경
+  };
+
+  const tooltipXY = { left: `${eyePosition.x}px`, top: `${eyePosition.y}px` };
 
   // 눈알 초기값
   const leftEyeStyle = {
@@ -40,11 +44,6 @@ function Introduce() {
     // 마우스 이벤트에 따라 스타일 위치 변경
     originLeftRef.current = leftEyeStyle;
     originRightRef.current = rightEyeStyle;
-
-    // 눈 깜빡임
-    setTimeout(() => {
-      setEyes(true);
-    }, 500);
   });
 
   const leftEyeStyleRef = originLeftRef.current;
@@ -52,14 +51,14 @@ function Introduce() {
 
   return (
     <article className="introduceWrapper">
-      <div className="character" onClick={onClick}>
+      <div className="character" onClick={handleClick}>
         <div className="tooltip" onMouseMove={(e) => handleMouseMove(e)}>
           <BodySvg className="bodySvg" width={200} height={200} />
           <span className="tooltiptext" style={tooltipXY}>
             Blink~😉✨
           </span>
         </div>
-        {eyes ? (
+        {isBlinking ? (
           <>
             <LeftEye style={leftEyeStyleRef} width={7} height={7} />
             <RightEye style={rightEyeStyleRef} width={7} height={7} />
