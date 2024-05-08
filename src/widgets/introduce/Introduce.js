@@ -23,8 +23,6 @@ function Introduce() {
     }, 300); // 0.3초 후에 다시 눈 깜빡임 상태로 변경
   };
 
-  const tooltipXY = { left: `${eyePosition.x}px`, top: `${eyePosition.y}px` };
-
   // 눈알 초기값
   const leftEyeStyle = {
     position: "absolute",
@@ -41,6 +39,8 @@ function Introduce() {
   const originRightRef = useRef(rightEyeStyle);
 
   useEffect(() => {
+    console.log(`left: ${eyePosition.x}px, top: ${eyePosition.y}px`);
+
     // 마우스 이벤트에 따라 스타일 위치 변경
     originLeftRef.current = leftEyeStyle;
     originRightRef.current = rightEyeStyle;
@@ -50,11 +50,19 @@ function Introduce() {
   const rightEyeStyleRef = originRightRef.current;
 
   return (
-    <article className="introduceWrapper">
+    <article
+      className="introduceWrapper"
+      onMouseMove={(e) => {
+        handleMouseMove(e);
+      }}
+    >
       <div className="character" onClick={handleClick}>
-        <div className="tooltip" onMouseMove={(e) => handleMouseMove(e)}>
+        <div className="tooltip">
           <BodySvg className="bodySvg" width={200} height={200} />
-          <span className="tooltiptext" style={tooltipXY}>
+          <span
+            className="tooltiptext"
+            style={{ left: `${eyePosition.x}px`, top: `${eyePosition.y}px` }}
+          >
             Blink~😉✨
           </span>
         </div>
