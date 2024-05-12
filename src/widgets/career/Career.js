@@ -30,7 +30,8 @@ function Career() {
           <ul>
             <li className="subtitle">주요 업무</li>
             <li className="text">
-              프론트엔드, 기능 리스트 및 제품 매뉴얼 작성, 팀 노션 관리
+              프론트엔드(데이터 시각화, 유지보수 등), 기능 리스트 및 제품 매뉴얼
+              작성, 팀 노션 관리
             </li>
             <li className="subtitle">개발 환경</li>
             <li>TypeScript, Angular, MySQL, LoopBack</li>
