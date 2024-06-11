@@ -46,7 +46,7 @@ const projects = [
     gitUrl: "https://github.com/BeautyKim/beauty-kim-app",
     notionUrl:
       "https://ahreumi.notion.site/Notion-API-0d58f07c855d42ff88e093d006e12761",
-    url: "https://beautykimnotionblog-beautykims-projects.vercel.app/",
+    url: "https://beauty-kim-app.vercel.app",
   },
   {
     id: 1,
